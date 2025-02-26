@@ -14,34 +14,31 @@
         <header>
             <nav class="flex justify-center items-center mt-6">
                 <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
-                    <img class="w-48 absolute" src="assets/images/login bg.png" alt="Payoo Logo">
-                    <img class="w-16" src="assets/images/Group.png" alt="Payoo Logo">
+                    <img class="w-48 absolute top-6" src="assets/images/login bg.png" alt="Payoo Logo">
+                    <img class="w-16 z-10 relative top-10" src="assets/images/Group.png" alt="Payoo Logo">
                 </div>
             </nav>
         </header>
         <!-- login card  -->
         <div class="hero-content">
             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                <div class="card-body">
+                <form class="card-body">
                     <fieldset class="fieldset">
                         <!-- email -->
-                        <label class="fieldset-label">Email</label>
-                        <input type="email" class="input" placeholder="Email" />
-
+                        <label class="fieldset-label">Mobile Number <span class="text-red-500">*</span></label>
+                        <input type="number" class="input" placeholder="Type your Number" required/>
                         <!-- password -->
-                        <label class="fieldset-label">Password</label>
-                        <input type="password" class="input" placeholder="Password" />
-
+                        <label class="fieldset-label">4 Digit PIN <span class="text-red-500">*</span></label>
+                        <input type="password" class="input" placeholder="Type 4 Digit PIN" required/>
                         <!-- forgot password -->
                         <div><a class="link link-hover">Forgot password?</a></div>
-
                         <!-- login button -->
                         <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
                     </fieldset>
-                </div>
+                </form>
             </div>
         </div>
     </main>
+    <script src="scripts/login.js"></script>
 </body>
-
 </html>
