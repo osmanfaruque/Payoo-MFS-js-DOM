@@ -21,8 +21,7 @@
                         <p class="text-sm sm:text-lg">available balance</p>
                     </div>
                 </div>
-                <button
-                    id="logout-btn"
+                <button id="logout-btn"
                     class="btn box-border bg-gray-200 text-sm sm:text-lg border-none text-black shadow-md shadow-gray-400">
                     <img src="assets/images/logout-icon.png" alt="Company Logo">
                     Log-Out
@@ -38,42 +37,48 @@
                 <div class="flex flex-col gap-4 sm:gap-2">
                     <div class="grid grid-cols-3 gap-3 sm:gap-4">
                         <!-- card 1 -->
-                        <button id="add-money-section-btn" class="card bg-base-100 shadow-lg hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="add-money-section-btn"
+                            class="card bg-base-100 shadow-lg hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/wallet-icon.png" alt="Add Money">
                                 <h3 class="card-title text-sm sm:text-base">Add Money</h3>
                             </div>
                         </button>
                         <!-- card 2 -->
-                        <button id="cashout-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="cashout-section-btn"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/cashout-icon.png" alt="Cashout">
                                 <h3 class="card-title text-sm sm:text-base">Cashout</h3>
                             </div>
                         </button>
                         <!-- card 3 -->
-                        <button id="transfer-money-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="transfer-money-section-btn"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/transfer-money-icon.png" alt="Transfer Money">
                                 <h3 class="card-title text-sm sm:text-base">Transfer Money</h3>
                             </div>
                         </button>
                         <!-- card 4 -->
-                        <button id="get-bonus-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="get-bonus-section-btn"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/get-bonus-icon.png" alt="get-bonus-icon">
                                 <h3 class="card-title text-sm sm:text-base">Get Bonus</h3>
                             </div>
                         </button>
                         <!-- card 5 -->
-                        <button id="pay-bill-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="pay-bill-section-btn"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/pay-bill-icon.png" alt="pay-bill-icon">
                                 <h3 class="card-title text-sm sm:text-base">Pay Bill</h3>
                             </div>
                         </button>
                         <!-- card 6 -->
-                        <button id="transaction-history-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="transaction-history-section-btn"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/transaction-icon.png" alt="transaction-icon">
                                 <h3 class="card-title text-sm sm:text-base">Transactions</h3>
@@ -277,36 +282,116 @@
         </section>
         <!-- Transaction History Section -->
         <section id="transaction-history-section" class="hidden">
-            <div class="px-6 sm:px-3 py-3 sm:py-9">
-                <h2 class="card-title text-2xl sm:text-xl pb-4">Cash Out</h2>
-                <div class="bg-white p-6 rounded-3xl flex flex-col gap-4">
-                    <!-- Agent Number -->
-                    <div class="form-control flex flex-col gap-2">
-                        <label class="label">
-                            <span class="label-text">Agent Number</span>
-                        </label>
-                        <input id="agent-number" type="number" placeholder="Enter 11-digit account number"
-                            class="input input-bordered w-full" />
+            <div class="card bg-white max-w-md mx-auto shadow-sm">
+                <div class="card-body p-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="card-title text-lg font-medium text-gray-800">Transaction History</h2>
+                        <a href="#" class="text-sm text-blue-500">View All</a>
                     </div>
-                    <!-- Amount to Add -->
-                    <div class="form-control flex flex-col gap-2">
-                        <label class="label">
-                            <span class="label-text">Amount to Cashout</span>
-                        </label>
-                        <input id="amount-cashout" type="number" placeholder="Add Amount to withdraw"
-                            class="input input-bordered w-full" />
-                    </div>
-                    <!-- Pin Number -->
-                    <div class="form-control flex flex-col gap-2">
-                        <label class="label">
-                            <span class="label-text">Pin Number</span>
-                        </label>
-                        <input id="pin" type="password" placeholder="Enter 4 digit pin number"
-                            class="input input-bordered w-full" />
-                    </div>
-                    <!-- Add Money Button -->
-                    <div class="card-actions justify-center mt-4">
-                        <button id="add-money-btn" class="btn btn-primary w-full">Withdraw Money</button>
+
+                    <div class="space-y-2">
+                        <!-- Electricity Bill -->
+                        <div class="card bg-base-100 shadow-sm">
+                            <div class="card-body p-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="avatar placeholder mr-3">
+                                            <div
+                                                class="bg-yellow-100 text-yellow-500 rounded-full w-10 h-10 flex items-center justify-center">
+                                                <img src="assets/images/wallet-icon.png" alt="Electricity Bill"
+                                                    class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800">Electricity Bill</h3>
+                                            <p class="text-xs text-gray-500">Today 01:44 AM</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-ghost btn-circle btn-xs">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bank Deposit -->
+                        <div class="card bg-base-100 shadow-sm">
+                            <div class="card-body p-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="avatar placeholder mr-3">
+                                            <div
+                                                class="bg-green-100 text-green-500 rounded-full w-10 h-10 flex items-center justify-center">
+                                                <img src="assets/images/wallet-icon.png" alt="Bank Deposit"
+                                                    class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800">Bank Deposit</h3>
+                                            <p class="text-xs text-gray-500">Today 01:44 AM</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-ghost btn-circle btn-xs">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Recharge -->
+                        <div class="card bg-base-100 shadow-sm">
+                            <div class="card-body p-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="avatar placeholder mr-3">
+                                            <div
+                                                class="bg-blue-100 text-blue-500 rounded-full w-10 h-10 flex items-center justify-center">
+                                                <img src="assets/images/wallet-icon.png" alt="Mobile Recharge"
+                                                    class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800">Mobile Recharge</h3>
+                                            <p class="text-xs text-gray-500">Today 01:44 AM</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-ghost btn-circle btn-xs">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gas Bill -->
+                        <div class="card bg-base-100 shadow-sm">
+                            <div class="card-body p-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div class="avatar placeholder mr-3">
+                                            <div
+                                                class="bg-red-100 text-red-500 rounded-full w-10 h-10 flex items-center justify-center">
+                                                <img src="assets/images/wallet-icon.png" alt="Gas Bill" class="w-5 h-5">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800">Gas Bill</h3>
+                                            <p class="text-xs text-gray-500">Today 01:44 AM</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-ghost btn-circle btn-xs">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
