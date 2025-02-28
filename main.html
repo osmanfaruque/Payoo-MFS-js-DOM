@@ -17,11 +17,12 @@
                 <div class="flex items-center gap-2">
                     <a href="#"><img class=" w-7 sm:w-10" src="assets/images/Group.png" alt="Payoo logo"></a>
                     <div>
-                        <h1 class="text-lg sm:text-2xl font-bold">$ 45000</h1>
+                        <h1 class="text-lg sm:text-2xl font-bold">$ <span id="balance">45000</span></h1>
                         <p class="text-sm sm:text-lg">available balance</p>
                     </div>
                 </div>
                 <button
+                    id="logout-btn"
                     class="btn box-border bg-gray-200 text-sm sm:text-lg border-none text-black shadow-md shadow-gray-400">
                     <img src="assets/images/logout-icon.png" alt="Company Logo">
                     Log-Out
@@ -89,16 +90,16 @@
             </div>
         </section>
         <!-- Add Money Section -->
-        <section class="card p-4">
-            <div class="card-body">
+        <section>
+            <div class="px-6 sm:px-3 py-3 sm:py-9">
                 <h2 class="card-title text-2xl sm:text-xl pb-4">Add Money</h2>
-                <div class="bg-white p-6 rounded-3xl">
+                <div class="bg-white p-6 rounded-3xl flex flex-col gap-4">
                     <!-- Select A Bank -->
-                    <div class="form-control flex flex-col gap-4">
+                    <div class="form-control flex flex-col gap-2">
                         <label class="label">
                             <span class="label-text">Select A Bank</span>
                         </label>
-                        <select class="select select-bordered w-full">
+                        <select id="bank" class="select select-bordered w-full">
                             <option disabled selected>Select bank</option>
                             <option value="bkash">Bkash</option>
                             <option value="nagad">Nagad</option>
@@ -108,36 +109,39 @@
                         </select>
                     </div>
                     <!-- bank Account Number -->
-                    <div class="form-control flex flex-col gap-4">
+                    <div class="form-control flex flex-col gap-2">
                         <label class="label">
                             <span class="label-text">Bank Account Number</span>
                         </label>
-                        <input type="text" placeholder="Enter 11-digit account number"
+                        <input id="account-number" type="number" placeholder="Enter 11-digit account number"
                             class="input input-bordered w-full" />
                     </div>
                     <!-- Amount to Add -->
-                    <div class="form-control flex flex-col gap-4">
+                    <div class="form-control flex flex-col gap-2">
                         <label class="label">
                             <span class="label-text">Amount to Add</span>
                         </label>
-                        <input type="text" placeholder="Add Amount to withdraw" class="input input-bordered w-full" />
+                        <input id="amount" type="number" placeholder="Add Amount to withdraw"
+                            class="input input-bordered w-full" />
                     </div>
                     <!-- Pin Number -->
-                    <div class="form-control flex flex-col gap-4">
+                    <div class="form-control flex flex-col gap-2">
                         <label class="label">
                             <span class="label-text">Pin Number</span>
                         </label>
-                        <input type="password" placeholder="Enter 4 digit pin number"
+                        <input id="pin" type="password" placeholder="Enter 4 digit pin number"
                             class="input input-bordered w-full" />
                     </div>
                     <!-- Add Money Button -->
                     <div class="card-actions justify-center mt-4">
-                        <button class="btn btn-primary w-full">Add Money</button>
+                        <button id="add-money-btn" class="btn btn-primary w-full">Add Money</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="scripts/add-money.js"></script>
+    <script src="scripts/logout.js"></script>
 </body>
 
 </html>
