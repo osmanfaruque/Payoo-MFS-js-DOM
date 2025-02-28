@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,78 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/cebd269f74.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-slate-800">
- <main class="max-w-md min-h-screen mx-auto">
-     <header class="bg-white">
-        <nav class="navbar flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <a href="#"><img class="w-10" src="assets/images/Group.png" alt="Payoo logo"></a>
-                <div>
-                    <h1 class="text-2xl font-bold">$ 45000</h1>
-                    <p class="text-sm">available balance</p>
+
+<body class="sm:bg-slate-800">
+    <main class="max-w-screen-sm min-h-screen mx-auto">
+        <header class="bg-white px-6 sm:px-3 py-3">
+            <nav class="navbar flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <a href="#"><img class=" w-7 sm:w-10" src="assets/images/Group.png" alt="Payoo logo"></a>
+                    <div>
+                        <h1 class="text-lg sm:text-2xl font-bold">$ 45000</h1>
+                        <p class="text-sm sm:text-lg">available balance</p>
+                    </div>
+                </div>
+                <button class="btn box-border bg-gray-200 text-sm sm:text-lg border-none text-black shadow-md shadow-gray-400">
+                    <img src="assets/images/logout-icon.png" alt="Company Logo">
+                    Log-Out
+                </button>
+            </nav>
+        </header>
+        <hr class="border-gray-300">
+        <section class="bg-white pt-8 sm:pt-5 px-6 sm:px-3 py-3">
+            <div class="flex flex-col gap-3 sm:gap-4">
+                <h1 class="text-2xl sm:text-3xl font-bold"><i class="fa-solid fa-fire" style="color: #FFD43B;"></i> Welcome to Payooo!</h1>
+                <p class="text-base sm:text-base">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                <div class="flex flex-col gap-3 sm:gap-4">
+                    <div class="grid grid-cols-3 gap-3 sm:gap-4">
+                        <!-- card 1 -->
+                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="card-body items-center text-center">
+                                <img src="assets/images/wallet-icon.png" alt="Add Money">
+                                <h3 class="card-title text-sm sm:text-base">Add Money</h3>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="card-body items-center text-center">
+                                <img src="assets/images/cashout-icon.png" alt="Cashout">
+                                <h3 class="card-title text-sm sm:text-base">Cashout</h3>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="card-body items-center text-center">
+                                <img src="assets/images/transfer-money-icon.png" alt="Transfer Money">
+                                <h3 class="card-title text-sm sm:text-base">Transfer Money</h3>
+                            </div>
+                        </div>
+                        <!-- card 4 -->
+                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="card-body items-center text-center">
+                                <img src="assets/images/get-bonus-icon.png" alt="get-bonus-icon">
+                                <h3 class="card-title text-sm sm:text-base">Get Bonus</h3>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="card-body items-center text-center">
+                                <img src="assets/images/pay-bill-icon.png" alt="pay-bill-icon">
+                                <h3 class="card-title text-sm sm:text-base">Pay Bill</h3>
+                            </div>
+                        </div>
+                        <!-- card 6 -->
+                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="card-body items-center text-center">
+                                <img src="assets/images/transaction-icon.png" alt="transaction-icon">
+                                <h3 class="card-title text-sm sm:text-base">Transactions</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="btn box-border bg-gray-200 border-none text-black shadow-md shadow-gray-400"> 
-                <img src="assets/images/logout-icon.png" alt="Company Logo">
-                Log-Out
-            </button>
-        </nav>
-        <hr class="border-gray-300">
-     </header>
-     <section class="bg-white">
-        <div>
-            <h1 class="text-2xl font-bold"><i class="fa-solid fa-fire" style="color: #FFD43B;"></i>Welcome to Payooo!</h1>
-            <p class="text-sm">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
-        </div>
-    </section>
- </main>
+        </section>
+    </main>
 </body>
+
 </html>
