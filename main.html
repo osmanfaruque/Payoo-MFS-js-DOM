@@ -38,59 +38,53 @@
                 <div class="flex flex-col gap-4 sm:gap-2">
                     <div class="grid grid-cols-3 gap-3 sm:gap-4">
                         <!-- card 1 -->
-                        <a href="#"
-                            class="card bg-base-100 shadow-lg hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="add-money-section-btn" class="card bg-base-100 shadow-lg hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/wallet-icon.png" alt="Add Money">
                                 <h3 class="card-title text-sm sm:text-base">Add Money</h3>
                             </div>
-                        </a>
+                        </button>
                         <!-- card 2 -->
-                        <a href="#"
-                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="cashout-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/cashout-icon.png" alt="Cashout">
                                 <h3 class="card-title text-sm sm:text-base">Cashout</h3>
                             </div>
-                        </a>
+                        </button>
                         <!-- card 3 -->
-                        <a href="#"
-                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="transfer-money-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/transfer-money-icon.png" alt="Transfer Money">
                                 <h3 class="card-title text-sm sm:text-base">Transfer Money</h3>
                             </div>
-                        </a>
+                        </button>
                         <!-- card 4 -->
-                        <a href="#"
-                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="get-bonus-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/get-bonus-icon.png" alt="get-bonus-icon">
                                 <h3 class="card-title text-sm sm:text-base">Get Bonus</h3>
                             </div>
-                        </a>
+                        </button>
                         <!-- card 5 -->
-                        <a href="#"
-                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="pay-bill-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/pay-bill-icon.png" alt="pay-bill-icon">
                                 <h3 class="card-title text-sm sm:text-base">Pay Bill</h3>
                             </div>
-                        </a>
+                        </button>
                         <!-- card 6 -->
-                        <a href="#"
-                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
+                        <button id="transaction-history-section-btn" class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/transaction-icon.png" alt="transaction-icon">
                                 <h3 class="card-title text-sm sm:text-base">Transactions</h3>
                             </div>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Add Money Section -->
-        <section>
+        <section id="add-money-section" class="block">
             <div class="px-6 sm:px-3 py-3 sm:py-9">
                 <h2 class="card-title text-2xl sm:text-xl pb-4">Add Money</h2>
                 <div class="bg-white p-6 rounded-3xl flex flex-col gap-4">
@@ -121,7 +115,7 @@
                         <label class="label">
                             <span class="label-text">Amount to Add</span>
                         </label>
-                        <input id="amount" type="number" placeholder="Add Amount to withdraw"
+                        <input id="amount-to-add" type="number" placeholder="Add Amount to withdraw"
                             class="input input-bordered w-full" />
                     </div>
                     <!-- Pin Number -->
@@ -139,9 +133,188 @@
                 </div>
             </div>
         </section>
+        <!-- Cashout Section -->
+        <section id="cashout-section" class="hidden">
+            <div class="px-6 sm:px-3 py-3 sm:py-9">
+                <h2 class="card-title text-2xl sm:text-xl pb-4">Cash Out</h2>
+                <div class="bg-white p-6 rounded-3xl flex flex-col gap-4">
+                    <!-- Agent Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Agent Number</span>
+                        </label>
+                        <input id="agent-number" type="number" placeholder="Enter 11-digit account number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Amount to Add -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Amount to Cashout</span>
+                        </label>
+                        <input id="amount-cashout" type="number" placeholder="Add Amount to withdraw"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Pin Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Pin Number</span>
+                        </label>
+                        <input id="pin" type="password" placeholder="Enter 4 digit pin number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Add Money Button -->
+                    <div class="card-actions justify-center mt-4">
+                        <button id="add-money-btn" class="btn btn-primary w-full">Withdraw Money</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Transfer Money Section -->
+        <section id="transfer-money-section" class="hidden">
+            <div class="px-6 sm:px-3 py-3 sm:py-9">
+                <h2 class="card-title text-2xl sm:text-xl pb-4">Transfer Money</h2>
+                <div class="bg-white p-6 rounded-3xl flex flex-col gap-4">
+                    <!-- User Account Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">User Account Number</span>
+                        </label>
+                        <input id="account-number" type="number" placeholder="Enter 11-digit account number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Amount to Add -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Amount to Transfer</span>
+                        </label>
+                        <input id="amount-transfer" type="number" placeholder="Add Amount to transfer"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Pin Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Pin Number</span>
+                        </label>
+                        <input id="pin" type="password" placeholder="Enter 4 digit pin number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Add Money Button -->
+                    <div class="card-actions justify-center mt-4">
+                        <button id="transfer-money-btn" class="btn btn-primary w-full">Transfer Money</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Get Bonus Section -->
+        <section id="get-bonus-section" class="hidden">
+            <div class="px-6 sm:px-3 py-3 sm:py-9">
+                <h2 class="card-title text-2xl sm:text-xl pb-4">Get Bonus</h2>
+                <div class="bg-white p-6 rounded-3xl flex flex-col gap-4">
+                    <!-- Bonus Coupon Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Enter Bonus Coupon</span>
+                        </label>
+                        <input id="bonus-amount" type="number" placeholder="Enter your Coupon"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Add Money Button -->
+                    <div class="card-actions justify-center mt-4">
+                        <button id="get-bonus-btn" class="btn btn-primary w-full">Get Bonus</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pay Bill Section -->
+        <section id="pay-bill-section" class="hidden">
+            <div class="px-6 sm:px-3 py-3 sm:py-9">
+                <h2 class="card-title text-2xl sm:text-xl pb-4">Pay Bill</h2>
+                <div class="bg-white p-6 rounded-3xl flex flex-col gap-4">
+                    <!-- Select To Pay with -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Select to Pay</span>
+                        </label>
+                        <select id="bank" class="select select-bordered w-full">
+                            <option disabled selected>Select payment method</option>
+                            <option value="bkash">Bkash</option>
+                            <option value="nagad">Nagad</option>
+                            <option value="rocket">Rocket</option>
+                            <option value="taptap">Upay</option>
+                            <option value=" Online-banking">Online Banking</option>
+                        </select>
+                    </div>
+                    <!-- bank Account Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Biller Account Number</span>
+                        </label>
+                        <input id="account-number" type="number" placeholder="Enter account number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Amount to pay -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Amount to pay</span>
+                        </label>
+                        <input id="amount-to-pay" type="number" placeholder="Add Amount to pay"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Pin Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Pin Number</span>
+                        </label>
+                        <input id="pin" type="password" placeholder="Enter 4 digit pin number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Pay pay-now-btn Button -->
+                    <div class="card-actions justify-center mt-4">
+                        <button id="pay-now-btn" class="btn btn-primary w-full">Pay Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Transaction History Section -->
+        <section id="transaction-history-section" class="hidden">
+            <div class="px-6 sm:px-3 py-3 sm:py-9">
+                <h2 class="card-title text-2xl sm:text-xl pb-4">Cash Out</h2>
+                <div class="bg-white p-6 rounded-3xl flex flex-col gap-4">
+                    <!-- Agent Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Agent Number</span>
+                        </label>
+                        <input id="agent-number" type="number" placeholder="Enter 11-digit account number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Amount to Add -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Amount to Cashout</span>
+                        </label>
+                        <input id="amount-cashout" type="number" placeholder="Add Amount to withdraw"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Pin Number -->
+                    <div class="form-control flex flex-col gap-2">
+                        <label class="label">
+                            <span class="label-text">Pin Number</span>
+                        </label>
+                        <input id="pin" type="password" placeholder="Enter 4 digit pin number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Add Money Button -->
+                    <div class="card-actions justify-center mt-4">
+                        <button id="add-money-btn" class="btn btn-primary w-full">Withdraw Money</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="scripts/add-money.js"></script>
     <script src="scripts/logout.js"></script>
+    <script src="scripts/card-switch.js"></script>
 </body>
 
 </html>
