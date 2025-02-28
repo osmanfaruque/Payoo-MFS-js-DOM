@@ -1,0 +1,34 @@
+<section class="px-6 sm:px-3 py-3 flex flex-col gap-5 sm:gap-4">
+    <h1 class="text-xl sm:text-2xl font-bold">Add Money</h1>
+    <div class="flex flex-col gap-4 sm:gap-2">
+        <!-- add money form -->
+        <form class="card-body">
+            <fieldset class="fieldset">
+                <!-- bank select -->
+                <div class="flex flex-col gap-3">
+                    <legend class="text-base sm:text-lg">Select A Bank</Legend>
+                    <select class="select select-bordered-0">
+                        <option disabled selected><span class="text-gray-200">Select Bank</span></option>
+                        <option value="bkash">Bkash</option>
+                        <option value="nagad">Nagad</option>
+                        <option value="rocket">Rocket</option>
+                        <option value="taptap">Tap Tap</option>
+                        <option value="banking">Banking</option>
+                    </select>
+                </div>
+                <!-- Account Number -->
+                <label class="fieldset-label">Bank Account Number</label>
+                <input id="" type="number" class="input" placeholder="Enter 11 Digit Account Number" required />
+                <!-- Amount to add -->
+                <label class="fieldset-label">Amount to Add</label>
+                <input id="" type="number" class="input" placeholder="Add Amount to Deposit/Withdraw"
+                    required />
+                <!-- Pin Number -->
+                <label class="fieldset-label">4 Digit PIN</label>
+                <input id="" type="password" class="input" placeholder="Type 4 Digit PIN" required />
+                <!-- Add Money button -->
+                <button id="login-btn" class="btn bg-blue-700 text-white mt-4">Add Money</button>
+            </fieldset>
+        </form>
+    </div>
+</section>  

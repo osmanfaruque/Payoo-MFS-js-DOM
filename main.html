@@ -11,8 +11,8 @@
 </head>
 
 <body class="sm:bg-slate-800">
-    <main class="max-w-screen-sm min-h-screen mx-auto">
-        <header class="bg-white px-6 sm:px-3 py-3">
+    <main class="max-w-screen-sm min-h-screen mx-auto bg-[#F4F5F7]">
+        <header class="bg-white box-border border-b-2 border-gray-300 px-6 sm:px-3 py-3">
             <nav class="navbar flex justify-between items-center">
                 <div class="flex items-center gap-2">
                     <a href="#"><img class=" w-7 sm:w-10" src="assets/images/Group.png" alt="Payoo logo"></a>
@@ -21,61 +21,118 @@
                         <p class="text-sm sm:text-lg">available balance</p>
                     </div>
                 </div>
-                <button class="btn box-border bg-gray-200 text-sm sm:text-lg border-none text-black shadow-md shadow-gray-400">
+                <button
+                    class="btn box-border bg-gray-200 text-sm sm:text-lg border-none text-black shadow-md shadow-gray-400">
                     <img src="assets/images/logout-icon.png" alt="Company Logo">
                     Log-Out
                 </button>
             </nav>
         </header>
-        <hr class="border-gray-300">
-        <section class="bg-white pt-8 sm:pt-5 px-6 sm:px-3 py-3">
+        <!-- Welcome Section -->
+        <section class="bg-white box-border border-b-2 border-gray-300 pt-8 sm:pt-5 px-6 sm:px-3 py-3 sm:py-9">
             <div class="flex flex-col gap-3 sm:gap-4">
-                <h1 class="text-2xl sm:text-3xl font-bold"><i class="fa-solid fa-fire" style="color: #FFD43B;"></i> Welcome to Payooo!</h1>
-                <p class="text-base sm:text-base">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
-                <div class="flex flex-col gap-3 sm:gap-4">
+                <h1 class="text-2xl sm:text-3xl font-bold"><i class="fa-solid fa-fire" style="color: #FFD43B;"></i>
+                    Welcome to Payooo!</h1>
+                <p class="text-base">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+                <div class="flex flex-col gap-4 sm:gap-2">
                     <div class="grid grid-cols-3 gap-3 sm:gap-4">
                         <!-- card 1 -->
-                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                        <a href="#"
+                            class="card bg-base-100 shadow-lg hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/wallet-icon.png" alt="Add Money">
                                 <h3 class="card-title text-sm sm:text-base">Add Money</h3>
                             </div>
-                        </div>
+                        </a>
                         <!-- card 2 -->
-                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                        <a href="#"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/cashout-icon.png" alt="Cashout">
                                 <h3 class="card-title text-sm sm:text-base">Cashout</h3>
                             </div>
-                        </div>
+                        </a>
                         <!-- card 3 -->
-                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                        <a href="#"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/transfer-money-icon.png" alt="Transfer Money">
                                 <h3 class="card-title text-sm sm:text-base">Transfer Money</h3>
                             </div>
-                        </div>
+                        </a>
                         <!-- card 4 -->
-                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                        <a href="#"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/get-bonus-icon.png" alt="get-bonus-icon">
                                 <h3 class="card-title text-sm sm:text-base">Get Bonus</h3>
                             </div>
-                        </div>
+                        </a>
                         <!-- card 5 -->
-                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                        <a href="#"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/pay-bill-icon.png" alt="pay-bill-icon">
                                 <h3 class="card-title text-sm sm:text-base">Pay Bill</h3>
                             </div>
-                        </div>
+                        </a>
                         <!-- card 6 -->
-                        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+                        <a href="#"
+                            class="card bg-base-100 shadow-md hover:shadow-2xl transition-shadow cursor-pointer">
                             <div class="card-body items-center text-center">
                                 <img src="assets/images/transaction-icon.png" alt="transaction-icon">
                                 <h3 class="card-title text-sm sm:text-base">Transactions</h3>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Add Money Section -->
+        <section class="card p-4">
+            <div class="card-body">
+                <h2 class="card-title text-2xl sm:text-xl pb-4">Add Money</h2>
+                <div class="bg-white p-6 rounded-3xl">
+                    <!-- Select A Bank -->
+                    <div class="form-control flex flex-col gap-4">
+                        <label class="label">
+                            <span class="label-text">Select A Bank</span>
+                        </label>
+                        <select class="select select-bordered w-full">
+                            <option disabled selected>Select bank</option>
+                            <option value="bkash">Bkash</option>
+                            <option value="nagad">Nagad</option>
+                            <option value="rocket">Rocket</option>
+                            <option value="taptap">Tap Tap</option>
+                            <option value="banking">Banking</option>
+                        </select>
+                    </div>
+                    <!-- bank Account Number -->
+                    <div class="form-control flex flex-col gap-4">
+                        <label class="label">
+                            <span class="label-text">Bank Account Number</span>
+                        </label>
+                        <input type="text" placeholder="Enter 11-digit account number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Amount to Add -->
+                    <div class="form-control flex flex-col gap-4">
+                        <label class="label">
+                            <span class="label-text">Amount to Add</span>
+                        </label>
+                        <input type="text" placeholder="Add Amount to withdraw" class="input input-bordered w-full" />
+                    </div>
+                    <!-- Pin Number -->
+                    <div class="form-control flex flex-col gap-4">
+                        <label class="label">
+                            <span class="label-text">Pin Number</span>
+                        </label>
+                        <input type="password" placeholder="Enter 4 digit pin number"
+                            class="input input-bordered w-full" />
+                    </div>
+                    <!-- Add Money Button -->
+                    <div class="card-actions justify-center mt-4">
+                        <button class="btn btn-primary w-full">Add Money</button>
                     </div>
                 </div>
             </div>
